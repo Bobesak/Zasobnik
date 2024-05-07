@@ -16,33 +16,25 @@ namespace GunHandling;
             Gun weapon = new Gun();
             Program a = new Program();
 
-            Console.WriteLine("Velikost Zasobniku? :");
-            a.MagazineSize = int.Parse(Console.ReadLine());
+            a.MagazineSize = AnsiConsole.Prompt(new TextPrompt<int>("Zadej Velikost Zásobníku: ")
+                .InvalidChoiceMessage("Invalid Magazine Size")
+                .PromptStyle("grey")
+                .ValidationErrorMessage("Invalid Magazine Size")
+                .Validate(magazine =>
+                        {
+                            if (magazine < 0 || magazine > 60)
+                            {
+                                return ValidationResult.Error("Invalid Magazine Size");
+                            }
+                            return ValidationResult.Success();
+                        }));                
+
+            Console.Clear();
+            a.Caliber = AnsiConsole.Prompt(new SelectionPrompt<string>()
+                .Title("Typ Ráže")
+                .PageSize(3)
+                .AddChoices(new[] { "9mm", "5.56mm", "12 gauge" }));
             
-            if (a.MagazineSize > 60 || a.MagazineSize < 1) //zkontroluje platnost zasobniku
-            {
-                Console.WriteLine("Magazine Size Out of bounds, 1-60 max");
-                throw new ArgumentOutOfRangeException();
-            }
-
-            Console.WriteLine(@"Typy Ráží: 
-            1. 9mm
-            2. 5.56mm
-            3. 12 gauge
-            "); //vypíše možné ráže
-
-
-            string Caliber = Console.ReadLine();
-            if (Caliber == "9mm" || Caliber == "5.56mm" || Caliber == "12 gauge") //zkontroluje platnost ráže
-            {
-                Console.WriteLine("Acceptable ammo Type");
-            }
-
-            else
-            {
-                Console.WriteLine("Invalid ammo type");
-                throw new ArgumentOutOfRangeException();
-            }
             Console.ReadKey();
 
 

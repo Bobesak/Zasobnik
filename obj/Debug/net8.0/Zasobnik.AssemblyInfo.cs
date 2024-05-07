@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zasobnik")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d92cb811bb1b22e63f72ab359caa4ed6cec09e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23555e5ec981770028a8bcec9f9d746639f2c3ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zasobnik")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zasobnik")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
