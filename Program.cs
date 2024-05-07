@@ -9,15 +9,9 @@ namespace GunHandling;
     {
         static void Main(string[] args)
         {
-            Program a = new();
-            
             Gun weapon = new() { };
             Console.Clear();
             weapon.Fire();
-            
-            
-            
-            
             Console.ReadKey();
         }
     }
