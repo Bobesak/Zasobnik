@@ -4,7 +4,7 @@ namespace gun
     {
         public void Ammo()
         {
-            Console.WriteLine("Ammo");
+            
         }
 
         public void Fire()
