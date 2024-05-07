@@ -1,0 +1,14 @@
+c:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Debug\net8.0\Zasobnik.exe
+c:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Debug\net8.0\Zasobnik.deps.json
+c:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Debug\net8.0\Zasobnik.runtimeconfig.json
+c:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Debug\net8.0\Zasobnik.dll
+c:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Debug\net8.0\Zasobnik.pdb
+c:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.AssemblyInfoInputs.cache
+c:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.AssemblyInfo.cs
+c:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.csproj.CoreCompileInputs.cache
+c:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.dll
+c:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\refint\Zasobnik.dll
+c:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.pdb
+c:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.genruntimeconfig.cache
+c:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\ref\Zasobnik.dll
