@@ -14,5 +14,5 @@ c:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.genruntimecon
 c:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\ref\Zasobnik.dll
 C:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Debug\net8.0\Spectre.Console.dll
 C:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.csproj.AssemblyReference.cache
-C:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.csproj.Up2Date
 C:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.sourcelink.json
+C:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.csproj.Up2Date
