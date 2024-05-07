@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xAbM1o0PWhi5RqHyyEDafigH3BooP40W5i1WjspjloolrgVAWmRP3rV7/eoY66v+gynIFSxhgR2DkBzCK4YAaA==",
+  "dgSpecHash": "u3P6T2HHFQ96eZfqRPmAg188POYZ/wkQ2Yc1Ryc/pIqp7dbW/H0r8mZYb1UpGxIf3cHPUyXdbjsJmj8GBFJZnA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bobes\\Documents\\GitHub\\Zasobnik\\Zasobnik.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Bobes\\.nuget\\packages\\spectre.console\\0.49.1\\spectre.console.0.49.1.nupkg.sha512"
+  ],
   "logs": []
 }
