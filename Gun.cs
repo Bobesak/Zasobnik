@@ -28,7 +28,7 @@ namespace gun
         {
             this.SerialNumber = GenerateAmmoSerialNumber();
             AssignAmmoParameters();
-            Reload();
+            ReloadAll();
         }
         
         
@@ -42,52 +42,142 @@ namespace gun
                 return;
             }
             AmmooList.RemoveAt(0); // odstrani jeden naboj
-            Console.WriteLine(@AmmooList.Count + "/" + MaxMagazineSize);
             
-            var a = AmmooList.Count;
+            
+            
+            var font = FigletFont.Load("starwars.flf");
+
+            AnsiConsole.Write(
+                new FigletText(font, "BANG!")
+                    .Centered()
+                    .Color(Color.Red));
+            
+    
+            AnsiConsole.Write(new Text(@"
+     _.-^^---....,,--       
+ _--                  --_  
+<                        >)
+|                         | 
+ \._                   _./  
+    ```--. . , ; .--'''       
+          | |   |             
+       .-=||  | |=-.   
+       `-=#$%&%$#=-'   
+          | ;  :|     
+ _____.,-#%&$@%#&#~,._____").Centered());
+            
+            
+            
+            
+            
+            Thread.Sleep(500);
+            
+            
+            
+           
+            
+        }
+
+        public void DisplayAmmo()
+        {
+            AnsiConsole.Write(new BarChart()
+                .Width(60)
+                .Label("[green bold underline]Magazine[/]")
+                .CenterLabel()
+                .AddItem(@"Ammo : " + Caliber , AmmooList.Count, Color.Yellow)
+                .AddItem(@"Max Ammo", MaxMagazineSize, Color.Red));
+            AnsiConsole.WriteLine("------------------------------------------------------------------------------------------");
+            
+            
+        }
+
+        public void CheckMagazine()
+        {
+            /*var a = AmmooList.Count;
             
             foreach (Ammo ammo in AmmooList)
             {
-                Console.WriteLine("------------------------------------------------------------------------------------------");
                 Console.WriteLine("Bullet Number " + a);
                 Console.WriteLine("Serial Number : " + ammo.SerialNumber);
                 Console.WriteLine("Caliber : " + Caliber);
+                Console.WriteLine("------------------------------------------------------------------------------------------");
                 a--;
-            }
+            } */
+
+            var table = new Table();
+            table.AddColumn("Bullet Number");
+            table.AddColumn("Serial Number");
+            table.AddColumn("Caliber");
+
+            foreach (var ammo in AmmooList) table.AddRow((AmmooList.IndexOf(ammo) + 1) + ".", ammo.SerialNumber, Caliber);
+            table.Border(TableBorder.Rounded);
+//            table.Columns[0].Width(10);
+            table.Columns[0].Centered();
+            table.Columns[2].Centered();
+            table.ShowRowSeparators = true;
             
+            AnsiConsole.Write(table);
+
         }
-        
+
+
         public void AssignAmmoParameters()
         {
             Caliber = AnsiConsole.Prompt(new SelectionPrompt<string>()
-                .Title("Typ Ráže")
+                .Title("Ammo Type")
                 .PageSize(3)
                 .AddChoices(new[] { "9mm", "5.56mm", "12 gauge" }));
             Console.Clear();
-            MaxMagazineSize = AnsiConsole.Prompt(new TextPrompt<int>("Zadej Velikost Zásobníku: ")
+            MaxMagazineSize = AnsiConsole.Prompt(new TextPrompt<int>("Enter Magazine Size: ")
                 .InvalidChoiceMessage("Invalid Magazine Size")
                 .PromptStyle("grey")
                 .ValidationErrorMessage("Invalid Magazine Size")
                 .Validate(magazine =>
                 {
-                    if (magazine < 0 || magazine > 60)
+                    if (magazine <= 0 || magazine > 60)
                     {
                         return ValidationResult.Error("Invalid Magazine Size");
                     }
                     return ValidationResult.Success();
                 }));
+            ReloadAll();
             Console.Clear();
         }
         
         
         
-        public void Reload()
+        public void ReloadAll()
         {
+            
             List<Ammo> l = [];
             
             for(int i = 0; i < MaxMagazineSize; i++) l.Add(new Ammo());
 
             AmmooList = l;
+        }
+        
+        public void Reload()
+        {
+             
+            
+            var AmmoToReload = AnsiConsole.Prompt(new TextPrompt<int>("Amount of ammo to reload: ")
+                .InvalidChoiceMessage("Doesnt fit in the magazine")
+                .PromptStyle("grey")
+                .ValidationErrorMessage("Doesnt fit in the magazine")
+                .Validate(AmmoToReload =>
+                {
+                    if (AmmoToReload + AmmooList.Count > MaxMagazineSize)
+                    {
+                        return ValidationResult.Error("Doesnt fit in the magazine");
+                    } else if (AmmoToReload <= 0)
+                    {
+                        return ValidationResult.Error("You cant reload 0 bullets :skull:");
+                    }
+                    return ValidationResult.Success();
+                }));
+            Console.Clear();
+            
+            for(int i = 0; i < AmmoToReload; i++) AmmooList.Add(new Ammo());
         }
 
         

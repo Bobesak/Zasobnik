@@ -9,6 +9,27 @@
 
   <ItemGroup>
     <PackageReference Include="Spectre.Console" Version="0.49.1" />
+    <PackageReference Include="Spectre.Console.ImageSharp" Version="0.49.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="starwars.flf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bin\Debug\net8.0\starwars.flf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="obj\Debug\net8.0\starwars.flf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="obj\Release\net8.0\starwars.flf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="obj\Release\net8.0\" />
   </ItemGroup>
 
 </Project>

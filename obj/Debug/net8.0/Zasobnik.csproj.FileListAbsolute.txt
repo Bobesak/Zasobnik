@@ -16,3 +16,5 @@ C:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Debug\net8.0\Spectre.Console.dll
 C:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.csproj.AssemblyReference.cache
 C:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.sourcelink.json
 C:\Users\Bobes\Documents\GitHub\Zasobnik\obj\Debug\net8.0\Zasobnik.csproj.Up2Date
+C:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+C:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Debug\net8.0\Spectre.Console.ImageSharp.dll
