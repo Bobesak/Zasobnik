@@ -1,3 +1,4 @@
+C:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Release\net8.0\win-x86\starwars.flf
 C:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Release\net8.0\win-x86\Zasobnik.exe
 C:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Release\net8.0\win-x86\Zasobnik.deps.json
 C:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Release\net8.0\win-x86\Zasobnik.runtimeconfig.json
