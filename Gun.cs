@@ -169,10 +169,7 @@ namespace gun
                     if (AmmoToReload + AmmooList.Count > MaxMagazineSize)
                     {
                         return ValidationResult.Error("Doesnt fit in the magazine");
-                    } else if (AmmoToReload <= 0)
-                    {
-                        return ValidationResult.Error("You cant reload 0 bullets :skull:");
-                    }
+                    } 
                     return ValidationResult.Success();
                 }));
             Console.Clear();

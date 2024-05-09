@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "bY1lcNzglbd903Vxg5kISHTwzpvIJhhyneB0wd5fxYSDIDEyyg79GnKcPqafq408e2vts2QWfj+WLaa5/kuBkw==",
+  "dgSpecHash": "Hf0yTsDJfe2IiQn+P82oaFZw/QJgPP5KpdW+hRdLq22eRw1lOa7fcZKukyqZw3arW+uRmldylV+e2NuPj9b5eQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bobes\\Documents\\GitHub\\Zasobnik\\Zasobnik.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Bobes\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.3\\microsoft.net.illink.tasks.8.0.3.nupkg.sha512",
     "C:\\Users\\Bobes\\.nuget\\packages\\sixlabors.imagesharp\\3.1.4\\sixlabors.imagesharp.3.1.4.nupkg.sha512",
     "C:\\Users\\Bobes\\.nuget\\packages\\spectre.console\\0.49.1\\spectre.console.0.49.1.nupkg.sha512",
     "C:\\Users\\Bobes\\.nuget\\packages\\spectre.console.imagesharp\\0.49.1\\spectre.console.imagesharp.0.49.1.nupkg.sha512"

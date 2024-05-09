@@ -1,3 +1,2 @@
 C:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Release\net8.0\win-x86\publish\Zasobnik.pdb
-C:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Release\net8.0\win-x86\publish\starwars.flf
 C:\Users\Bobes\Documents\GitHub\Zasobnik\bin\Release\net8.0\win-x86\publish\Zasobnik.exe
