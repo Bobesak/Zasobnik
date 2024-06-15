@@ -1,0 +1,3 @@
+C:\Users\Bobes\Documents\Zasobnik.pdb
+C:\Users\Bobes\Documents\starwars.flf
+C:\Users\Bobes\Documents\Zasobnik.exe

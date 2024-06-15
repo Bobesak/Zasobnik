@@ -1,10 +1,8 @@
 using GunHandling;
-
 namespace gun
 {
     public class Gun
     {
-
         public class Ammo
         {
             public string SerialNumber { get; }
@@ -13,16 +11,12 @@ namespace gun
                 this.SerialNumber = GenerateAmmoSerialNumber();
             }
         }
-        
-
         // vlastnosti
         public string SerialNumber { get; }
         public int MaxMagazineSize { get; private set; }
         public String Caliber { get; private set; }
         private Program a = new Program();
         public List<Ammo> AmmooList = new();
-
-
         // konstruktor
         public Gun()
         {
@@ -30,9 +24,6 @@ namespace gun
             AssignAmmoParameters();
             ReloadAll();
         }
-        
-        
-
         // metody
         public void Fire()
         {
@@ -66,18 +57,8 @@ namespace gun
           | ;  :|     
  _____.,-#%&$@%#&#~,._____").Centered());
             
-            
-            
-            
-            
             Thread.Sleep(500);
-            
-            
-            
-           
-            
         }
-
         public void DisplayAmmo()
         {
             AnsiConsole.Write(new BarChart()
@@ -87,23 +68,9 @@ namespace gun
                 .AddItem(@"Ammo : " + Caliber , AmmooList.Count, Color.Yellow)
                 .AddItem(@"Max Ammo", MaxMagazineSize, Color.Red));
             AnsiConsole.WriteLine("------------------------------------------------------------------------------------------");
-            
-            
         }
-
         public void CheckMagazine()
         {
-            /*var a = AmmooList.Count;
-            
-            foreach (Ammo ammo in AmmooList)
-            {
-                Console.WriteLine("Bullet Number " + a);
-                Console.WriteLine("Serial Number : " + ammo.SerialNumber);
-                Console.WriteLine("Caliber : " + Caliber);
-                Console.WriteLine("------------------------------------------------------------------------------------------");
-                a--;
-            } */
-
             var table = new Table();
             table.AddColumn("Bullet Number");
             table.AddColumn("Serial Number");
@@ -119,8 +86,6 @@ namespace gun
             AnsiConsole.Write(table);
 
         }
-
-
         public void AssignAmmoParameters()
         {
             Caliber = AnsiConsole.Prompt(new SelectionPrompt<string>()
@@ -143,19 +108,12 @@ namespace gun
             ReloadAll();
             Console.Clear();
         }
-        
-        
-        
         public void ReloadAll()
         {
-            
             List<Ammo> l = [];
-            
             for(int i = 0; i < MaxMagazineSize; i++) l.Add(new Ammo());
-
             AmmooList = l;
         }
-        
         public void Reload()
         {
              
@@ -176,10 +134,6 @@ namespace gun
             
             for(int i = 0; i < AmmoToReload; i++) AmmooList.Add(new Ammo());
         }
-
-        
-
-
         private static string GenerateAmmoSerialNumber(int delka = 11)
         {
             char[] chars = "ABCDEFGHIJKLMNOPRSTUVWXYZ123456789".ToCharArray();
@@ -189,14 +143,7 @@ namespace gun
             {
                 word[i] = chars[new Random().Next(chars.Length)];
             }
-
             return new string( word );
-
-
-
         }
-
-
-
     }
 }
